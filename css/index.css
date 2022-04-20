@@ -1,0 +1,147 @@
+header .logo {
+  background: #212529;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+header .logo h5 {
+  color: #fff;
+}
+
+main {
+  /* cambio de colores */
+  -webkit-animation: random 15s infinite;
+  animation: random 15s infinite;
+  /* aqui termina */
+}
+@keyframes random {
+  15% {
+    background-color: #212529;
+  }
+  30% {
+    background-color: #5e5e5e;
+  }
+  45% {
+    background-color: #6f6f6f;
+  }
+  60% {
+    background-color: #828282;
+  }
+  75% {
+    background-color: #aaaaaa;
+  }
+  15% {
+    color: #fff;
+  }
+  30% {
+    color: #fff;
+  }
+  45% {
+    color: #fff;
+  }
+  60% {
+    color: #fff;
+  }
+  75% {
+    color: #212529;
+  }
+}
+main #galeria .titulo-main h2 {
+  text-decoration: underline overline;
+}
+main #galeria .noticias {
+  width: 75%;
+}
+main #galeria .noticias .noticia {
+  position: relative;
+  display: inline-block;
+  text-align: center;
+}
+main #galeria .noticias .noticia .texto-encima {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: #fff;
+  background-color: rgba(0, 0, 0, 0.7);
+  font-size: 25px;
+  font-weight: 100;
+}
+main #galeria .noticias .col-lg-6 {
+  margin: 0 !important;
+  padding: 15px;
+}
+main #galeria .noticias .col-lg-6 img {
+  height: 350px;
+}
+main #album-dia .titulo-album h2 {
+  text-decoration: underline overline;
+}
+main #album-dia .albumes .album {
+  position: relative;
+  display: inline-block;
+  text-align: center;
+}
+main #album-dia .albumes .album .texto-album {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: #fff;
+  background-color: rgba(0, 0, 0, 0.7);
+  font-size: 25px;
+  font-weight: 100;
+}
+main #album-dia .albumes .album img {
+  width: 25%;
+}
+
+footer {
+  background-color: #212529;
+}
+
+/* ******************* Media Queries *************************************/
+/* No aplica */
+/* No aplica */
+@media (min-width: 1200px) and (max-width: 1399px) {
+  main #album-dia .albumes .album img {
+    width: 30%;
+  }
+}
+@media (min-width: 992px) and (max-width: 1199px) {
+  main #galeria .noticias .noticia img {
+    height: 300px;
+  }
+  main #album-dia .albumes .album img {
+    width: 30%;
+  }
+}
+@media (min-width: 768px) and (max-width: 991px) {
+  main #galeria .noticias .noticia img {
+    height: 370px;
+  }
+  main #album-dia .albumes .album img {
+    width: 50%;
+  }
+}
+@media (min-width: 576px) and (max-width: 767px) {
+  main #galeria .noticias .noticia img {
+    height: 310px;
+  }
+  main #album-dia .albumes .album img {
+    width: 60%;
+  }
+}
+@media (max-width: 575px) {
+  main #galeria .noticias {
+    width: 100%;
+  }
+  main #galeria .noticias .noticia img {
+    height: 310px;
+  }
+  main #album-dia .albumes .album img {
+    width: 80%;
+  }
+}
+
+/*# sourceMappingURL=index.css.map */
