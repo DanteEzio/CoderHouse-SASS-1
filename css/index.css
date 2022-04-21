@@ -12,9 +12,6 @@ main {
   color: #fff;
   background: linear-gradient(90deg, rgb(51, 102, 153), rgb(153, 51, 102));
 }
-main #portada-background .video-p {
-  position: fixed;
-}
 main #galeria .titulo-main h2 {
   text-decoration: underline overline;
 }
