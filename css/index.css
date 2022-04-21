@@ -9,42 +9,11 @@ header .logo h5 {
 }
 
 main {
-  /* cambio de colores */
-  -webkit-animation: random 15s infinite;
-  animation: random 15s infinite;
-  /* aqui termina */
+  color: #fff;
+  background: linear-gradient(90deg, rgb(51, 102, 153), rgb(153, 51, 102));
 }
-@keyframes random {
-  15% {
-    background-color: #212529;
-  }
-  30% {
-    background-color: #5e5e5e;
-  }
-  45% {
-    background-color: #6f6f6f;
-  }
-  60% {
-    background-color: #828282;
-  }
-  75% {
-    background-color: #aaaaaa;
-  }
-  15% {
-    color: #fff;
-  }
-  30% {
-    color: #fff;
-  }
-  45% {
-    color: #fff;
-  }
-  60% {
-    color: #fff;
-  }
-  75% {
-    color: #212529;
-  }
+main #portada-background .video-p {
+  position: fixed;
 }
 main #galeria .titulo-main h2 {
   text-decoration: underline overline;
@@ -74,15 +43,59 @@ main #galeria .noticias .col-lg-6 {
 main #galeria .noticias .col-lg-6 img {
   height: 350px;
 }
-main #album-dia .titulo-album h2 {
+main #album-dia {
+  /* cambio de colores */
+  -webkit-animation: random 15s infinite;
+  animation: random 15s infinite;
+  /* aqui termina */
+}
+@keyframes random {
+  15% {
+    background-color: #903495;
+  }
+  30% {
+    background-color: #6f3460;
+  }
+  45% {
+    background-color: #4a354f;
+  }
+  60% {
+    background-color: #d20076;
+  }
+  75% {
+    background-color: #ff0076;
+  }
+  15% {
+    color: #fff;
+  }
+  30% {
+    color: #fff;
+  }
+  45% {
+    color: #fff;
+  }
+  60% {
+    color: #fff;
+  }
+  75% {
+    color: #212529;
+  }
+}
+main #album-dia .contenedor-disco {
+  width: 40%;
+  margin: 0 auto;
+}
+main #album-dia .contenedor-disco .titulo-album h2 {
   text-decoration: underline overline;
 }
-main #album-dia .albumes .album {
+main #album-dia .contenedor-disco .albumes .album {
+  width: 50%;
+  margin: 0 auto;
   position: relative;
   display: inline-block;
   text-align: center;
 }
-main #album-dia .albumes .album .texto-album {
+main #album-dia .contenedor-disco .albumes .album .texto-album {
   position: absolute;
   top: 50%;
   left: 50%;
@@ -92,8 +105,8 @@ main #album-dia .albumes .album .texto-album {
   font-size: 25px;
   font-weight: 100;
 }
-main #album-dia .albumes .album img {
-  width: 25%;
+main #album-dia .contenedor-disco .albumes .album img {
+  height: 280px;
 }
 
 footer {

@@ -88,16 +88,27 @@
     </nav>
 
     <!-- MAIN -->
-    <main class="border-bottom fun-color">
+    <main>
+      <div id="portada-background" class="video-portada">
+        <iframe
+          width="100%"
+          height="450"
+          src="https://www.youtube-nocookie.com/embed/oJFS_Yo88H0?controls=0&amp;start=24"
+          title="YouTube video player"
+          frameborder="0"
+          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+          allowfullscreen
+        ></iframe>
+      </div>
+
+      <!-- Noticias -->
       <section id="galeria" class="container">
         <div class="titulo-main text-center pt-5">
           <h2>ÚLTIMAS NOTICIAS</h2>
         </div>
         <!-- "ROW" Esta clase modifica el tamaño del contenido dependiendo de los que se tenga adentro -->
         <!-- Noticias -->
-        <div
-          class="noticias row align-items-center pt-4 mx-auto border-bottom pb-4"
-        >
+        <div class="noticias row align-items-center pt-4 mx-auto">
           <!-- Columnas para pantallas grandes que midan 6 espacios, recordemos que tenemos hasta 12 espacios disponibles por columna -->
           <div class="noticia col-lg-6 col-md-12 col-sm-12">
             <img
@@ -142,20 +153,36 @@
         <!-- <div class="border-bottom separacion"></div> -->
       </section>
 
-      <section id="album-dia" class="container pb-5">
-        <div class="titulo-album text-center pt-5">
-          <h2>ÁLBUM DEL DÍA</h2>
-        </div>
-        <!-- "ROW" Esta clase modifica el tamaño del contenido dependiendo de los que se tenga adentro -->
-        <div class="albumes row pt-4">
-          <!-- Columnas para pantallas grandes que midan 6 espacios, recordemos que tenemos hasta 12 espacios disponibles por columna -->
-          <div class="album text-center">
-            <img
-              src="imagenes/album-dia.jpg"
-              alt="Galeria Noticias"
-              class="img-fluid rounded"
-            />
-            <p class="lead card-title texto-album">Hatful of Hollow</p>
+      <!-- Album del dia -->
+      <section id="album-dia" class="container-fluid pb-5 mt-5">
+        <div class="contenedor-disco">
+          <div class="titulo-album text-center pt-5">
+            <h2>ÁLBUM DEL DÍA</h2>
+          </div>
+          <!-- "ROW" Esta clase modifica el tamaño del contenido dependiendo de los que se tenga adentro -->
+          <div class="albumes row pt-4 justify-content-between">
+            <!-- Columnas para pantallas grandes que midan 6 espacios, recordemos que tenemos hasta 12 espacios disponibles por columna -->
+            <div
+              class="album text-center col-lg-12 col-md-4 col-sm-12 my-auto pb-4"
+            >
+              <img
+                src="imagenes/album-dia.jpg"
+                alt="Galeria Noticias"
+                class="img-fluid rounded w-100"
+              />
+              <p class="lead card-title texto-album">Hatful of Hollow</p>
+            </div>
+            <div class="playlist col-lg-12 col-md-8 col-sm-12">
+              <iframe
+                style="border-radius: 12px"
+                src="https://open.spotify.com/embed/album/1j57Q5ntVi7crpibb0h4sv?utm_source=generator"
+                width="100%"
+                height="80"
+                frameborder="0"
+                allowfullscreen=""
+                allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture"
+              ></iframe>
+            </div>
           </div>
         </div>
       </section>

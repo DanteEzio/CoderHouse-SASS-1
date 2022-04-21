@@ -22,26 +22,17 @@ header{
 
 //***Main***
 main{
-    /* cambio de colores */
-    -webkit-animation: random 15s infinite;
-    animation: random 15s infinite;
-    
-    
-    @keyframes random {
-    15% { background-color: $dark; } 
-    30% { background-color: $gris-1; } 
-    45% { background-color: $gris-2;}
-    60% { background-color: $gris-3; } 
-    75% { background-color: $gris-4;} 
-    15% { color: $blanco; } 
-    30% { color: $blanco; } 
-    45% { color: $blanco }
-    60% { color: $blanco } 
-    75% { color: $dark;} 
+    color: $blanco;
+    background: linear-gradient(90deg, rgb(20%, 40%, 60%), rgb(60%, 20%, 40%));
+
+    #portada-background{
+        .video-p{
+            position: fixed;
+        }
     }
-    /* aqui termina */
 
     #galeria{
+
         .titulo-main{
             h2{
                 text-decoration: underline overline;
@@ -81,31 +72,60 @@ main{
     }
 
     #album-dia{
-        .titulo-album{
-            h2{
-                text-decoration: underline overline;
-            }
+        /* cambio de colores */
+        -webkit-animation: random 15s infinite;
+        animation: random 15s infinite;
+        
+        
+        @keyframes random {
+        15% { background-color: #903495; } 
+        30% { background-color: #6f3460; } 
+        45% { background-color: #4a354f; }
+        60% { background-color: #d20076; } 
+        75% { background-color: #ff0076; }
+        
+        15% { color: $blanco; } 
+        30% { color: $blanco; } 
+        45% { color: $blanco }
+        60% { color: $blanco } 
+        75% { color: $dark;} 
         }
+        /* aqui termina */
 
-        .albumes{
-            .album{
-                position: relative;
-                display: inline-block;
-                text-align: center;
+        .contenedor-disco{
+            width: 40%;
+            margin: 0 auto;
 
-                .texto-album{
-                    position: absolute;
-                    top: 50%;
-                    left: 50%;
-                    transform: translate(-50%, -50%);
-                    color: $blanco;
-                    background-color: rgba(0, 0, 0, 0.7);
-                    font-size: 25px;
-                    font-weight: 100;
+            .titulo-album{
+                h2{
+                    text-decoration: underline overline;
                 }
+            }
 
-                img{
-                    width: 25%;
+            .albumes{
+                .album{
+                    width: 50%;
+                    margin: 0 auto;
+                    position: relative;
+                    display: inline-block;
+                    text-align: center;
+
+                    .texto-album{
+                        position: absolute;
+                        top: 50%;
+                        left: 50%;
+                        transform: translate(-50%, -50%);
+                        color: $blanco;
+                        background-color: rgba(0, 0, 0, 0.7);
+                        font-size: 25px;
+                        font-weight: 100;
+                    }
+
+                    img{
+                        height: 280px;
+                    }
+
+                    
                 }
             }
         }
