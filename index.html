@@ -88,7 +88,7 @@
     </nav>
 
     <!-- MAIN -->
-    <main>
+    <main class="border-bottom">
       <!-- Noticias -->
       <section id="galeria" class="container">
         <div class="titulo-main text-center pt-5">
@@ -102,7 +102,7 @@
             <img
               src="imagenes/travis1.webp"
               alt="Galeria Noticias"
-              class="img-fluid rounded w-100"
+              class="img-fluid rounded"
             />
             <p class="lead card-text texto-encima">
               Nuevo álbum "The Invisible Band"
@@ -112,7 +112,7 @@
             <img
               src="imagenes/concierto.png"
               alt="Galeria Noticias"
-              class="img-fluid rounded w-100"
+              class="img-fluid rounded"
             />
             <p class="lead card-text texto-encima">Proximos conciertos 2022</p>
           </div>
@@ -120,7 +120,7 @@
             <img
               src="imagenes/vaccines.jpg"
               alt="Galeria Noticias"
-              class="img-fluid rounded w-100"
+              class="img-fluid rounded"
             />
             <p class="lead card-text texto-encima">
               Gana 2 boletos para nuestro próximo concierto"
@@ -130,7 +130,7 @@
             <img
               src="imagenes/phoenix.webp"
               alt="Galeria Noticias"
-              class="img-fluid rounded w-100"
+              class="img-fluid rounded"
             />
             <p class="card-text texto-encima">
               Un día inolvidable con esta gran banda"
@@ -145,32 +145,59 @@
       <section id="album-dia" class="container-fluid pb-5 mt-5">
         <div class="contenedor-disco">
           <div class="titulo-album text-center pt-5">
-            <h2>ÁLBUM DEL DÍA</h2>
+            <h2>CANCIÓN DEL DÍA - SOMEBODY ELSE</h2>
           </div>
           <!-- "ROW" Esta clase modifica el tamaño del contenido dependiendo de los que se tenga adentro -->
           <div class="albumes row pt-4 justify-content-between">
             <!-- Columnas para pantallas grandes que midan 6 espacios, recordemos que tenemos hasta 12 espacios disponibles por columna -->
-            <div
-              class="album text-center col-lg-12 col-md-4 col-sm-12 my-auto pb-4"
-            >
+            <div class="album text-center pb-4">
               <img
                 src="imagenes/album-dia.jpg"
                 alt="Galeria Noticias"
-                class="img-fluid rounded w-100"
+                class="img-fluid rounded"
               />
-              <p class="lead card-title texto-album">Hatful of Hollow</p>
             </div>
-            <div class="playlist col-lg-12 col-md-8 col-sm-12">
+            <div class="playlist text-center">
               <iframe
                 style="border-radius: 12px"
                 src="https://open.spotify.com/embed/album/1j57Q5ntVi7crpibb0h4sv?utm_source=generator"
-                width="100%"
                 height="80"
                 frameborder="0"
                 allowfullscreen=""
                 allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture"
               ></iframe>
             </div>
+          </div>
+        </div>
+      </section>
+
+      <section id="siguenos" class="container-fluid pt-5 pb-5">
+        <h5 class="text-center">
+          ¡Suscríbete y entérate de
+          <br />
+          las fechas de conciertos y entradas!
+        </h5>
+
+        <div class="row">
+          <div class="formato-escribenos col-lg-4 mx-auto pt-3">
+            <form>
+              <div class="mb-3">
+                <label for="exampleInputEmail1" class="form-label"
+                  >Correo</label
+                >
+                <input
+                  type="email"
+                  class="form-control"
+                  placeholder="Ingresa tu correo aquí*"
+                  id="exampleInputEmail1"
+                  aria-describedby="emailHelp"
+                />
+                <div id="emailHelp" class="form-text">
+                  Nunca compartiremos tu información con nadie más.
+                </div>
+              </div>
+              <button type="submit" class="btn btn-primary">Enviar</button>
+            </form>
           </div>
         </div>
       </section>

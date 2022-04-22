@@ -8,8 +8,8 @@ $gris-4: #aaaaaa;
 
 //***Header***
 header{
+    background: linear-gradient(90deg, rgb(163, 44, 69), rgb(20, 16, 16));
     .logo{
-        background: $dark;
         display:flex;
         align-items: center;
         justify-content: center;
@@ -20,10 +20,15 @@ header{
     }
 }
 
+nav{
+    background: linear-gradient(90deg, rgb(163, 44, 69), rgb(20, 16, 16));
+}
+
+
 //***Main***
 main{
     color: $blanco;
-    background: linear-gradient(90deg, rgb(20%, 40%, 60%), rgb(60%, 20%, 40%));
+    background: linear-gradient(90deg, rgb(49, 40, 82), rgb(172, 18, 18));
 
 
     #galeria{
@@ -35,7 +40,7 @@ main{
         }
 
         .noticias{
-            width: 75%;
+            width: 68%;
 
             .noticia{
                 position: relative;
@@ -59,6 +64,7 @@ main{
                 padding: 15px;
 
                 img{
+                    width: 100%;
                     height: 350px;
                     
                 }
@@ -81,15 +87,14 @@ main{
         
         15% { color: $blanco; } 
         30% { color: $blanco; } 
-        45% { color: $blanco }
-        60% { color: $blanco } 
+        45% { color: $blanco; }
+        60% { color: $blanco; } 
         75% { color: $dark;} 
         }
         /* aqui termina */
 
         .contenedor-disco{
-            width: 40%;
-            margin: 0 auto;
+            
 
             .titulo-album{
                 h2{
@@ -98,29 +103,49 @@ main{
             }
 
             .albumes{
+                
+
                 .album{
-                    width: 50%;
-                    margin: 0 auto;
-                    position: relative;
-                    display: inline-block;
-                    text-align: center;
-
-                    .texto-album{
-                        position: absolute;
-                        top: 50%;
-                        left: 50%;
-                        transform: translate(-50%, -50%);
-                        color: $blanco;
-                        background-color: rgba(0, 0, 0, 0.7);
-                        font-size: 25px;
-                        font-weight: 100;
-                    }
-
                     img{
-                        height: 280px;
+                        height: 330px;
                     }
+                }
 
-                    
+                .playlist{
+                    iframe{
+                        width: 50%;
+                    }
+                }
+            }
+        }
+    }
+
+    #siguenos {
+        background: linear-gradient(90deg, rgb(189, 46, 11), rgb(121, 6, 102));
+
+        .row{
+            .formato-escribenos{
+                form{
+                    button{
+                        width: 100%;
+                        border: none;
+                        /* cambio de colores */
+                        -webkit-animation: random 15s infinite;
+                        animation: random 15s infinite;
+                        
+                        
+                        @keyframes random {
+                        15% { background-color: #903495; } 
+                        30% { background-color: #6f3460; } 
+                        45% { background-color: #4a354f; }
+                        60% { background-color: #d20076; } 
+                        75% { background-color: #ff0076; }
+                        }
+
+                        &:hover{
+                            box-shadow: 5px 5px 5px 1px rgba(228, 42, 42, 0.616);
+                        }
+                    }
                 }
             }
         }
@@ -130,23 +155,45 @@ main{
 //***FOOTER***
 
 footer{
-    background-color: $dark;
+    background: linear-gradient(90deg, rgb(163, 44, 69), rgb(20, 16, 16));
 }
 
 /* ******************* Media Queries *************************************/
 
 /* No aplica */
 @media screen and (max-width: 1400px){
+    main{
+        #album-dia{
+            .contenedor-disco{
+                .albumes{
+                    .album{
+                        img{
+                            height: 330px;
+                        }
+                    }
+                    .playlist{
+                        iframe{
+                            width: 50%;
+                        }
+                    }
+                }
+            }
+        }
+    }
 }
 
 /* No aplica */
 @media (min-width: 1200px) and (max-width: 1399px) {
     main{
-        #album-dia{
-            .albumes{
-                .album{
+        #galeria{
+
+            .noticias{
+                width: 80%;
+    
+                .noticia{
                     img{
-                        width: 30%;
+                        height: 350px;
+                        
                     }
                 }
             }
@@ -157,19 +204,14 @@ footer{
 @media (min-width: 992px) and (max-width: 1199px){
     main{
         #galeria{
+
             .noticias{
+                width: 95%;
+    
                 .noticia{
                     img{
-                        height: 300px;
-                    }
-                }
-            }
-        }
-        #album-dia{
-            .albumes{
-                .album{
-                    img{
-                        width: 30%;
+                        height: 350px;
+                        
                     }
                 }
             }
@@ -180,19 +222,25 @@ footer{
 @media (min-width: 768px) and (max-width: 991px){
     main{
         #galeria{
+
             .noticias{
+                width: 65%;
+    
                 .noticia{
                     img{
-                        height: 370px;
+                        height: 350px;
+                        
                     }
                 }
             }
         }
         #album-dia{
-            .albumes{
-                .album{
-                    img{
-                        width: 50%;
+            .contenedor-disco{
+                .albumes{
+                    .playlist{
+                        iframe{
+                            width: 70%;
+                        }
                     }
                 }
             }
@@ -203,27 +251,65 @@ footer{
 @media (min-width: 576px) and (max-width: 767px){
     main{
         #galeria{
+
             .noticias{
+                width: 85%;
+    
                 .noticia{
                     img{
-                        height: 310px;
+                        height: 350px;
+                        
                     }
                 }
             }
         }
         #album-dia{
-            .albumes{
-                .album{
-                    img{
-                        width: 60%;
+            .contenedor-disco{
+                .albumes{
+                    .playlist{
+                        iframe{
+                            width: 80%;
+                        }
                     }
                 }
+                
             }
         }
     }
 }
 
-@media (max-width: 575px){
+@media (min-width: 430px) and (max-width: 575px){
+
+    main{
+        #galeria{
+
+            .noticias{
+                width: 100%;
+    
+                .noticia{
+                    img{
+                        height: 330px;
+                        
+                    }
+                }
+            }
+        }
+        #album-dia{
+            .contenedor-disco{
+                .albumes{
+                    .playlist{
+                        iframe{
+                            width: 100%;
+                        }
+                    }
+                }
+                
+            }
+        }
+    }
+}
+
+@media (max-width: 429px){
 
     main{
         #galeria{
@@ -231,18 +317,27 @@ footer{
                 width: 100%;
                 .noticia{
                     img{
-                        height: 310px;
+                        height: 280px;
                     }
                 }
             }
         }
         #album-dia{
-            .albumes{
-                .album{
-                    img{
-                        width: 80%;
+            .contenedor-disco{
+                .albumes{
+                    .album{
+                        img{
+                            width: 90%;
+                            height: 300px;
+                        }
+                    }
+                    .playlist{
+                        iframe{
+                            width: 90%;
+                        }
                     }
                 }
+                
             }
         }
     }

@@ -1,5 +1,7 @@
+header {
+  background: linear-gradient(90deg, rgb(163, 44, 69), rgb(20, 16, 16));
+}
 header .logo {
-  background: #212529;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -8,15 +10,19 @@ header .logo h5 {
   color: #fff;
 }
 
+nav {
+  background: linear-gradient(90deg, rgb(163, 44, 69), rgb(20, 16, 16));
+}
+
 main {
   color: #fff;
-  background: linear-gradient(90deg, rgb(51, 102, 153), rgb(153, 51, 102));
+  background: linear-gradient(90deg, rgb(49, 40, 82), rgb(172, 18, 18));
 }
 main #galeria .titulo-main h2 {
   text-decoration: underline overline;
 }
 main #galeria .noticias {
-  width: 75%;
+  width: 68%;
 }
 main #galeria .noticias .noticia {
   position: relative;
@@ -38,6 +44,7 @@ main #galeria .noticias .col-lg-6 {
   padding: 15px;
 }
 main #galeria .noticias .col-lg-6 img {
+  width: 100%;
   height: 350px;
 }
 main #album-dia {
@@ -78,79 +85,123 @@ main #album-dia {
     color: #212529;
   }
 }
-main #album-dia .contenedor-disco {
-  width: 40%;
-  margin: 0 auto;
-}
 main #album-dia .contenedor-disco .titulo-album h2 {
   text-decoration: underline overline;
 }
-main #album-dia .contenedor-disco .albumes .album {
-  width: 50%;
-  margin: 0 auto;
-  position: relative;
-  display: inline-block;
-  text-align: center;
-}
-main #album-dia .contenedor-disco .albumes .album .texto-album {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  color: #fff;
-  background-color: rgba(0, 0, 0, 0.7);
-  font-size: 25px;
-  font-weight: 100;
-}
 main #album-dia .contenedor-disco .albumes .album img {
-  height: 280px;
+  height: 330px;
+}
+main #album-dia .contenedor-disco .albumes .playlist iframe {
+  width: 50%;
+}
+main #siguenos {
+  background: linear-gradient(90deg, rgb(189, 46, 11), rgb(121, 6, 102));
+}
+main #siguenos .row .formato-escribenos form button {
+  width: 100%;
+  border: none;
+  /* cambio de colores */
+  -webkit-animation: random 15s infinite;
+  animation: random 15s infinite;
+}
+@keyframes random {
+  15% {
+    background-color: #903495;
+  }
+  30% {
+    background-color: #6f3460;
+  }
+  45% {
+    background-color: #4a354f;
+  }
+  60% {
+    background-color: #d20076;
+  }
+  75% {
+    background-color: #ff0076;
+  }
+}
+main #siguenos .row .formato-escribenos form button:hover {
+  box-shadow: 5px 5px 5px 1px rgba(228, 42, 42, 0.616);
 }
 
 footer {
-  background-color: #212529;
+  background: linear-gradient(90deg, rgb(163, 44, 69), rgb(20, 16, 16));
 }
 
 /* ******************* Media Queries *************************************/
 /* No aplica */
-/* No aplica */
-@media (min-width: 1200px) and (max-width: 1399px) {
-  main #album-dia .albumes .album img {
-    width: 30%;
+@media screen and (max-width: 1400px) {
+  main #album-dia .contenedor-disco .albumes .album img {
+    height: 330px;
   }
-}
-@media (min-width: 992px) and (max-width: 1199px) {
-  main #galeria .noticias .noticia img {
-    height: 300px;
-  }
-  main #album-dia .albumes .album img {
-    width: 30%;
-  }
-}
-@media (min-width: 768px) and (max-width: 991px) {
-  main #galeria .noticias .noticia img {
-    height: 370px;
-  }
-  main #album-dia .albumes .album img {
+  main #album-dia .contenedor-disco .albumes .playlist iframe {
     width: 50%;
   }
 }
-@media (min-width: 576px) and (max-width: 767px) {
-  main #galeria .noticias .noticia img {
-    height: 310px;
+/* No aplica */
+@media (min-width: 1200px) and (max-width: 1399px) {
+  main #galeria .noticias {
+    width: 80%;
   }
-  main #album-dia .albumes .album img {
-    width: 60%;
+  main #galeria .noticias .noticia img {
+    height: 350px;
   }
 }
-@media (max-width: 575px) {
+@media (min-width: 992px) and (max-width: 1199px) {
+  main #galeria .noticias {
+    width: 95%;
+  }
+  main #galeria .noticias .noticia img {
+    height: 350px;
+  }
+}
+@media (min-width: 768px) and (max-width: 991px) {
+  main #galeria .noticias {
+    width: 65%;
+  }
+  main #galeria .noticias .noticia img {
+    height: 350px;
+  }
+  main #album-dia .contenedor-disco .albumes .playlist iframe {
+    width: 70%;
+  }
+}
+@media (min-width: 576px) and (max-width: 767px) {
+  main #galeria .noticias {
+    width: 85%;
+  }
+  main #galeria .noticias .noticia img {
+    height: 350px;
+  }
+  main #album-dia .contenedor-disco .albumes .playlist iframe {
+    width: 80%;
+  }
+}
+@media (min-width: 430px) and (max-width: 575px) {
   main #galeria .noticias {
     width: 100%;
   }
   main #galeria .noticias .noticia img {
-    height: 310px;
+    height: 330px;
   }
-  main #album-dia .albumes .album img {
-    width: 80%;
+  main #album-dia .contenedor-disco .albumes .playlist iframe {
+    width: 100%;
+  }
+}
+@media (max-width: 429px) {
+  main #galeria .noticias {
+    width: 100%;
+  }
+  main #galeria .noticias .noticia img {
+    height: 280px;
+  }
+  main #album-dia .contenedor-disco .albumes .album img {
+    width: 90%;
+    height: 300px;
+  }
+  main #album-dia .contenedor-disco .albumes .playlist iframe {
+    width: 90%;
   }
 }
 
