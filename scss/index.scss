@@ -41,10 +41,10 @@ main{
 
     #informacion-portada{
         /* cambio de colores */
-        -webkit-animation: portada 15s infinite;
-        animation: portada 15s infinite;
+        -webkit-animation: color1 15s infinite;
+        animation: color1 15s infinite;
         
-        @keyframes portada {
+        @keyframes color1 {
         15% { color: #159966; } 
         30% { color: #cfd200; } 
         45% { color: $blanco }
@@ -91,21 +91,21 @@ main{
                             margin: $margin;
                             transition: all 250ms ease-in-out;
 
-                            -webkit-animation: cambiar 15s infinite;
-                            animation: cambiar 15s infinite;
+                            -webkit-animation: collage 15s infinite;
+                            animation: collage 15s infinite;
 
-                            @keyframes cambiar {
-                            15% { box-shadow: 0px 0px 15px #93DA49; } 
-                            30% { box-shadow: 0px 0px 15px #FE575F; } 
-                            45% { box-shadow: 0px 0px 15px #c237db; }
-                            60% { box-shadow: 0px 0px 15px #40f2fe; } 
-                            75% { box-shadow: 0px 0px 15px #faed27; }
+                            @keyframes collage {
+                            0% { box-shadow: 0px 0px 15px #93DA49; } 
+                            25% { box-shadow: 0px 0px 15px #FE575F; } 
+                            50% { box-shadow: 0px 0px 15px #c237db; }
+                            75% { box-shadow: 0px 0px 15px #40f2fe; } 
+                            100% { box-shadow: 0px 0px 15px #faed27; }
 
-                            15% { border: 3px solid #93DA49; } 
-                            30% { border: 3px solid #FE575F; } 
-                            45% { border: 3px solid #c237db; }
-                            60% { border: 3px solid #40f2fe; } 
-                            75% { border: 3px solid #faed27; }
+                            0% { border: 3px solid #93DA49; } 
+                            25% { border: 3px solid #FE575F; } 
+                            50% { border: 3px solid #c237db; }
+                            75% { border: 3px solid #40f2fe; } 
+                            100% { border: 3px solid #faed27; }
                             }
                             
                             &:hover {
@@ -115,13 +115,14 @@ main{
                         }
                             
                         .item1 {
-                        background-image: url(../imagenes/album-dia.jpg);height: $medium;
+                        background-image: url(../artistas/imagenes/thekillers2019.jpg);
+                        height: $medium;
                         width: $medium;
                         margin-top: 10rem;
                         }
 
                         .item2 {
-                            background-image: url(../imagenes/concierto.png);
+                            background-image: url(../artistas/imagenes/radiohead.webp);
                             height: $small;
                             width: $small;
                             margin-bottom: 0rem;
@@ -129,61 +130,72 @@ main{
                         }
 
                         .item3 {
-                            background-image: url(../imagenes/travis1.webp);
+                            background-image: url(../artistas/imagenes/phoenix.webp);
                             height: $large;
                             width: $large;
                             margin-top: 10rem;
                         }
 
                         .item4 {
-                            background-image: url(../imagenes/vaccines.jpg);
+                            background-image: url(../artistas/imagenes/keane.webp);
                             height: $xxlarge;
                             width: $xxlarge;
                         }
 
                         .item5 {
-                            background-image: url(../imagenes/phoenix.webp);
+                            background-image: url(../artistas/imagenes/interpol.jpg);
                             width: $large;
                             height: $large;
                             margin-top: 5rem;
                         }
 
                         .item6 {
-                            background-image: url(../imagenes/concierto.png);
+                            background-image: url(../artistas/imagenes/franz-ferdinand-billy-goodbye.jpeg);
                             width: $medium;
                             height: $medium;
                             margin-top: 3rem;
                         }
                         
                         .item7 {
-                            background-image: url(../imagenes/phoenix.webp);
+                            background-image: url(../artistas/imagenes/coldplay.jpeg);
                             width: $xlarge;
                             height: $xlarge;
                             margin-top: 7rem;
                         }
 
                         .item8 {
-                            background-image: url(../imagenes/concierto.png);
+                            background-image: url(../artistas/imagenes/arcade-fire-2021.webp);
                             width: $small;
                             height: $small;
                             margin-top: 5rem;
                         }
 
                         .item9 {
-                            background-image: url(../imagenes/vaccines.jpg);
+                            background-image: url(../artistas/imagenes/Block-Party-band.png);
                             height: $xxlarge;
                             width: $xxlarge;
                             margin-top: 10rem;
                         }
-                      
                         .item10 {
-                            background-image: url(../imagenes/posiblePortada.jpg);
+                            background-image: url(../artistas/imagenes/arctic-monkeys.jpg);
                             width: $large;
                             height: $large;
                             margin-top: 5rem;
                         }
+
+                        .item11 {
+                            background-image: url(../artistas/imagenes/sonic.jpg);
+                            width: $large;
+                            height: $large;
+                            margin-top: 10rem;
+                        }
                     }
                 }
+            }
+            //Esta funcion nos permite pusar la animación cuando pasa el mouse en una
+            //burbuja
+            .paused {
+                animation-play-state: paused;
             }
         }
     }
@@ -231,22 +243,16 @@ main{
 
     #album-dia{
         /* cambio de colores */
-        -webkit-animation: random 15s infinite;
-        animation: random 15s infinite;
+        -webkit-animation: album-dia 15s infinite;
+        animation: album-dia 15s infinite;
         
         
-        @keyframes random {
-        15% { background-color: #903495; } 
-        30% { background-color: #6f3460; } 
-        45% { background-color: #4a354f; }
-        60% { background-color: #d20076; } 
-        75% { background-color: #ff0076; }
-        
-        15% { color: $blanco; } 
-        30% { color: $blanco; } 
-        45% { color: $blanco; }
-        60% { color: $blanco; } 
-        75% { color: $dark;} 
+        @keyframes album-dia {
+        0% { background-color: #903495; } 
+        25% { background-color: #6f3460; } 
+        50% { background-color: #4a354f; }
+        75% { background-color: #d20076; } 
+        100% { background-color: #ff0076; } 
         }
         /* aqui termina */
 
@@ -500,19 +506,23 @@ footer{
     }
 }
 
+//Aqui le estamos diciendo que el traslado empiece de la posicion 0 y una vez llegando
+// al ancho de la pantalla, se regrese
 @keyframes galleryInMotion {
     0% {
-        opacity: 0;
+        // opacity: 0;
+        transform: translateX(0);
     }
-    5% {
-        opacity: 1;
+    50% {
+        transform: translateX(calc(100vw - 110px));
     }
     100% {
         opacity: 1;
-        transform: translateX(-100%);
+        transform: translateX(0vh);
     }
 }
   
+
 @keyframes circleMove1 {
     0% {
     }
@@ -530,9 +540,4 @@ footer{
     100% {
         transform: translate3d(1px, 1px, 0);
     }
-}
-
-.paused{
-    -webkit-animation-play-state: paused;
-    -moz-animation-play-state: paused;
 }

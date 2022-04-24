@@ -1,3 +1,5 @@
+console.log("Funcionando 😱");
+
 var clusterWidth = $(".gallery__wrapper").width();
 
 console.log(clusterWidth);
