@@ -40,15 +40,17 @@ main{
     background: linear-gradient(90deg, rgb(49, 40, 82), rgb(172, 18, 18));
 
     #informacion-portada{
+        background-color: #00000036;
+
         /* cambio de colores */
         -webkit-animation: color1 15s infinite;
         animation: color1 15s infinite;
         
         @keyframes color1 {
-        15% { color: #159966; } 
-        30% { color: #cfd200; } 
-        45% { color: $blanco }
-        60% { color: #159966; } 
+        15% { color: #cfd200; } 
+        30% { color: $blanco } 
+        45% { color: #cfd200;}
+        60% { color: $blanco } 
         75% { color: #cfd200;} 
         }
         /* aqui termina */
@@ -59,6 +61,8 @@ main{
     }
 
     #collage{
+
+        
 
         .gallery{
             padding: 0.5rem 0;
@@ -209,9 +213,10 @@ main{
         }
 
         .noticias{
-            width: 68%;
 
             .noticia{
+                height: 500px;
+
                 position: relative;
                 display: inline-block;
                 text-align: center;
@@ -226,16 +231,45 @@ main{
                     font-size: 25px;
                     font-weight: 100;
                 }
-            }
 
-            .col-lg-6{
-                margin: 0 !important;
-                padding: 15px;
+                padding: 10px;
 
                 img{
                     width: 100%;
-                    height: 350px;
-                    
+                    height: 100%;
+                    // object-fit: cover;
+                }
+            }
+
+            .adentro{
+                .row{
+                    .imagen-adentro{
+                        height: 250px;
+                        
+                        position: relative;
+                        display: inline-block;
+                        text-align: center;
+
+                        .texto-encima{
+                            position: absolute;
+                            top: 50%;
+                            left: 50%;
+                            transform: translate(-50%, -50%);
+                            color: $blanco;
+                            background-color: rgba(0, 0, 0, 0.7);
+                            font-size: 25px;
+                            font-weight: 100;
+                        }
+
+                        padding: 10px;
+                        margin: 0 auto;
+
+                        img{
+                            width: 100%;
+                            height: 100%;
+                            // object-fit: cover;
+                        }
+                    }
                 }
             }
         }
@@ -347,56 +381,18 @@ footer{
 
 /* No aplica */
 @media (min-width: 1200px) and (max-width: 1399px) {
-    main{
-        #galeria{
-
-            .noticias{
-                width: 80%;
-    
-                .noticia{
-                    img{
-                        height: 350px;
-                        
-                    }
-                }
-            }
-        }
-    }
+    // main{
+        
+    // }
 }
 
 @media (min-width: 992px) and (max-width: 1199px){
-    main{
-        #galeria{
-
-            .noticias{
-                width: 95%;
-    
-                .noticia{
-                    img{
-                        height: 350px;
-                        
-                    }
-                }
-            }
-        }
-    }
+    // main{
+    // }
 }
 
 @media (min-width: 768px) and (max-width: 991px){
     main{
-        #galeria{
-
-            .noticias{
-                width: 65%;
-    
-                .noticia{
-                    img{
-                        height: 350px;
-                        
-                    }
-                }
-            }
-        }
         #album-dia{
             .contenedor-disco{
                 .albumes{
@@ -413,19 +409,7 @@ footer{
 
 @media (min-width: 576px) and (max-width: 767px){
     main{
-        #galeria{
-
-            .noticias{
-                width: 85%;
-    
-                .noticia{
-                    img{
-                        height: 350px;
-                        
-                    }
-                }
-            }
-        }
+        
         #album-dia{
             .contenedor-disco{
                 .albumes{
@@ -444,19 +428,7 @@ footer{
 @media (min-width: 430px) and (max-width: 575px){
 
     main{
-        #galeria{
-
-            .noticias{
-                width: 100%;
-    
-                .noticia{
-                    img{
-                        height: 330px;
-                        
-                    }
-                }
-            }
-        }
+        
         #album-dia{
             .contenedor-disco{
                 .albumes{
@@ -475,16 +447,7 @@ footer{
 @media (max-width: 429px){
 
     main{
-        #galeria{
-            .noticias{
-                width: 100%;
-                .noticia{
-                    img{
-                        height: 280px;
-                    }
-                }
-            }
-        }
+        
         #album-dia{
             .contenedor-disco{
                 .albumes{
