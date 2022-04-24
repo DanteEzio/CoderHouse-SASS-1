@@ -40,14 +40,26 @@ main{
     background: linear-gradient(90deg, rgb(49, 40, 82), rgb(172, 18, 18));
 
     #informacion-portada{
-        .portada{         
-            padding-top: 50px;
-            padding-bottom: 40px;
-            padding-left: 115px;
+        /* cambio de colores */
+        -webkit-animation: portada 15s infinite;
+        animation: portada 15s infinite;
+        
+        @keyframes portada {
+        15% { color: #159966; } 
+        30% { color: #cfd200; } 
+        45% { color: $blanco }
+        60% { color: #159966; } 
+        75% { color: #cfd200;} 
+        }
+        /* aqui termina */
+        .portada{
+            text-align: center;
+            padding: 30px;
         }
     }
 
     #collage{
+
         .gallery{
             padding: 0.5rem 0;
             max-width: 100%;
@@ -63,7 +75,9 @@ main{
                     width: 100%;
                     
                     .gallery-cluster{
-                        display: flex;align-items: flex-start;flex-wrap: wrap;max-width: 100%;
+                        display: flex;align-items: flex-start;
+                        flex-wrap: wrap;
+                        max-width: 100%;
                         // height: auto;
                         
                         .bubble-item{
