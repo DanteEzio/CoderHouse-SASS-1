@@ -21,3 +21,5 @@ $(".bubble-item").mouseenter(function () {
 $(".bubble-item").mouseleave(function () {
   $(".wrapper").removeClass("paused");
 });
+
+// ******************************************
