@@ -72,7 +72,7 @@ main{
             white-space: nowrap;
             
             .wrapper{
-                animation: galleryInMotion 30s infinite;
+                animation: galleryInMotion 25s infinite;
                 
                 .gallery__wrapper{
                     display: inline-block;
@@ -596,6 +596,34 @@ footer{
 
 @media (min-width: 992px) and (max-width: 1199px){
     main{
+        #galeria{
+    
+            .noticias{
+    
+                .noticia{
+                    height: 450px;
+    
+                    img{
+                        width: 100%;
+                        height: 100%;
+                        // object-fit: cover;
+                    }
+                }
+    
+                .adentro{
+                    .row{
+                        .imagen-adentro{
+                            height: 225px;
+
+                            p{
+                                font-size: 22px !important;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+
         #collage{
             .gallery{     
                 .wrapper{
