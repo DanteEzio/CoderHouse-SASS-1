@@ -361,6 +361,98 @@ footer{
 @media screen and (max-width: 1400px){
     main{
 
+        #collage{
+            .gallery{     
+                .wrapper{
+                    animation: galleryInMotion 20s infinite;
+                    .gallery__wrapper{
+                        
+                        .gallery-cluster{
+                                
+                            .item1 {
+                            background-image: url(../artistas/imagenes/thekillers2019.jpg);
+                            height: $medium;
+                            width: $medium;
+                            margin-top: 10rem;
+                            }
+    
+                            .item2 {
+                                background-image: url(../artistas/imagenes/radiohead.webp);
+                                height: $small;
+                                width: $small;
+                                margin-bottom: 0rem;
+                                margin-top: 5rem;
+                            }
+    
+                            .item3 {
+                                background-image: url(../artistas/imagenes/phoenix.webp);
+                                height: $large;
+                                width: $large;
+                                margin-top: 10rem;
+                            }
+    
+                            .item4 {
+                                background-image: url(../artistas/imagenes/keane.webp);
+                                height: $xxlarge;
+                                width: $xxlarge;
+                            }
+    
+                            .item5 {
+                                background-image: url(../artistas/imagenes/interpol.jpg);
+                                width: $large;
+                                height: $large;
+                                margin-top: 5rem;
+                            }
+    
+                            .item6 {
+                                background-image: url(../artistas/imagenes/franz-ferdinand-billy-goodbye.jpeg);
+                                width: $medium;
+                                height: $medium;
+                                margin-top: 3rem;
+                            }
+                            
+                            .item7 {
+                                background-image: url(../artistas/imagenes/coldplay.jpeg);
+                                width: $xlarge;
+                                height: $xlarge;
+                                margin-top: 7rem;
+                            }
+    
+                            .item8 {
+                                background-image: url(../artistas/imagenes/arcade-fire-2021.webp);
+                                width: $small;
+                                height: $small;
+                                margin-top: 5rem;
+                            }
+    
+                            .item9 {
+                                background-image: url(../artistas/imagenes/Block-Party-band.png);
+                                height: $xxlarge;
+                                width: $xxlarge;
+                                margin-top: 10rem;
+                            }
+                            .item10 {
+                                background-image: url(../artistas/imagenes/arctic-monkeys.jpg);
+                                width: $large;
+                                height: $large;
+                                margin-top: 5rem;
+                            }
+    
+                            .item11 {
+                                background-image: url(../artistas/imagenes/sonic.jpg);
+                                width: $large;
+                                height: $large;
+                                margin-top: 0rem;
+                            }
+                        }
+                    }
+                }
+                .paused {
+                    animation-play-state: paused;
+                }
+            }
+        }
+
         #album-dia{
             .contenedor-disco{
                 .albumes{
@@ -383,6 +475,99 @@ footer{
 /* No aplica */
 @media (min-width: 1200px) and (max-width: 1399px) {
     main{
+        #collage{
+            .gallery{     
+                .wrapper{
+                    animation: galleryInMotion 20s infinite;
+                    .gallery__wrapper{
+                        
+                        .gallery-cluster{
+                                
+                            .item1 {
+                            background-image: url(../artistas/imagenes/thekillers2019.jpg);
+                            height: $medium;
+                            width: $medium;
+                            margin-top: 10rem;
+                            }
+    
+                            .item2 {
+                                background-image: url(../artistas/imagenes/radiohead.webp);
+                                height: $small;
+                                width: $small;
+                                margin-bottom: 0rem;
+                                margin-top: 5rem;
+                            }
+    
+                            .item3 {
+                                background-image: url(../artistas/imagenes/phoenix.webp);
+                                height: $large;
+                                width: $large;
+                                margin-top: 10rem;
+                            }
+    
+                            .item4 {
+                                background-image: url(../artistas/imagenes/keane.webp);
+                                height: $xxlarge;
+                                width: $xxlarge;
+                            }
+    
+                            .item5 {
+                                background-image: url(../artistas/imagenes/interpol.jpg);
+                                width: $large;
+                                height: $large;
+                                margin-top: 15rem;
+                            }
+    
+                            .item6 {
+                                background-image: url(../artistas/imagenes/franz-ferdinand-billy-goodbye.jpeg);
+                                width: $medium;
+                                height: $medium;
+                                margin-top: 3rem;
+                            }
+                            
+                            .item7 {
+                                background-image: url(../artistas/imagenes/coldplay.jpeg);
+                                width: $xlarge;
+                                height: $xlarge;
+                                margin-top: 7rem;
+                            }
+    
+                            .item8 {
+                                background-image: url(../artistas/imagenes/arcade-fire-2021.webp);
+                                width: $small;
+                                height: $small;
+                                margin-top: 5rem;
+                            }
+    
+                            .item9 {
+                                background-image: url(../artistas/imagenes/Block-Party-band.png);
+                                height: $xxlarge;
+                                width: $xxlarge;
+                                margin-top: 10rem;
+                            }
+                            .item10 {
+                                background-image: url(../artistas/imagenes/arctic-monkeys.jpg);
+                                width: $large;
+                                height: $large;
+                                margin-top: 0rem;
+                            }
+    
+                            .item11 {
+                                background-image: url(../artistas/imagenes/sonic.jpg);
+                                width: $large;
+                                height: $large;
+                                margin-top: 0rem;
+                                margin-left: 15rem;
+                            }
+                        }
+                    }
+                }
+                .paused {
+                    animation-play-state: paused;
+                }
+            }
+        }
+
         #galeria{
     
             .noticias{
@@ -410,12 +595,202 @@ footer{
 }
 
 @media (min-width: 992px) and (max-width: 1199px){
-    // main{
-    // }
+    main{
+        #collage{
+            .gallery{     
+                .wrapper{
+                    animation: galleryInMotion 20s infinite;
+                    .gallery__wrapper{
+                        
+                        .gallery-cluster{
+                                
+                            .item1 {
+                            background-image: url(../artistas/imagenes/thekillers2019.jpg);
+                            height: $medium;
+                            width: $medium;
+                            margin-top: 10rem;
+                            }
+    
+                            .item2 {
+                                background-image: url(../artistas/imagenes/radiohead.webp);
+                                height: $small;
+                                width: $small;
+                                margin-bottom: 0rem;
+                                margin-top: 5rem;
+                            }
+    
+                            .item3 {
+                                background-image: url(../artistas/imagenes/phoenix.webp);
+                                height: $large;
+                                width: $large;
+                                margin-top: 10rem;
+                            }
+    
+                            .item4 {
+                                background-image: url(../artistas/imagenes/keane.webp);
+                                height: $xxlarge;
+                                width: $xxlarge;
+                                margin-top: 5rem;
+                            }
+    
+                            .item5 {
+                                background-image: url(../artistas/imagenes/interpol.jpg);
+                                width: $large;
+                                height: $large;
+                                margin-top: 15rem;
+                                margin-left: -2rem;
+                            }
+    
+                            .item6 {
+                                background-image: url(../artistas/imagenes/franz-ferdinand-billy-goodbye.jpeg);
+                                width: $medium;
+                                height: $medium;
+                                margin-top: 3rem;
+                            }
+                            
+                            .item7 {
+                                background-image: url(../artistas/imagenes/coldplay.jpeg);
+                                width: $xlarge;
+                                height: $xlarge;
+                                margin-top: 10rem;
+                            }
+    
+                            .item8 {
+                                background-image: url(../artistas/imagenes/arcade-fire-2021.webp);
+                                width: $small;
+                                height: $small;
+                                margin-top: 8rem;
+                            }
+    
+                            .item9 {
+                                background-image: url(../artistas/imagenes/Block-Party-band.png);
+                                height: $xxlarge;
+                                width: $xxlarge;
+                                margin-top: -5rem;
+                            }
+                            .item10 {
+                                background-image: url(../artistas/imagenes/arctic-monkeys.jpg);
+                                width: $large;
+                                height: $large;
+                                margin-top: 0rem;
+                            }
+    
+                            .item11 {
+                                background-image: url(../artistas/imagenes/sonic.jpg);
+                                width: $large;
+                                height: $large;
+                                margin-top: 0rem;
+                                margin-left: 15rem;
+                            }
+                        }
+                    }
+                }
+                .paused {
+                    animation-play-state: paused;
+                }
+            }
+        }
+    }
 }
 
 @media (min-width: 768px) and (max-width: 991px){
     main{
+        #collage{
+            .gallery{     
+                .wrapper{
+                    animation: galleryInMotion 15s infinite;
+                    .gallery__wrapper{
+                        
+                        .gallery-cluster{
+                                
+                            .item1 {
+                            background-image: url(../artistas/imagenes/thekillers2019.jpg);
+                            height: $medium;
+                            width: $medium;
+                            margin-top: 10rem;
+                            }
+    
+                            .item2 {
+                                background-image: url(../artistas/imagenes/radiohead.webp);
+                                height: $small;
+                                width: $small;
+                                margin-bottom: 0rem;
+                                margin-top: 5rem;
+                            }
+    
+                            .item3 {
+                                background-image: url(../artistas/imagenes/phoenix.webp);
+                                height: $large;
+                                width: $large;
+                                margin-top: 10rem;
+                            }
+    
+                            .item4 {
+                                background-image: url(../artistas/imagenes/keane.webp);
+                                height: $xxlarge;
+                                width: $xxlarge;
+                                margin-top: 5rem;
+                            }
+    
+                            .item5 {
+                                background-image: url(../artistas/imagenes/interpol.jpg);
+                                width: $large;
+                                height: $large;
+                                margin-top: 15rem;
+                                margin-left: -2rem;
+                            }
+    
+                            .item6 {
+                                background-image: url(../artistas/imagenes/franz-ferdinand-billy-goodbye.jpeg);
+                                width: $medium;
+                                height: $medium;
+                                margin-top: 8rem;
+                            }
+                            
+                            .item7 {
+                                background-image: url(../artistas/imagenes/coldplay.jpeg);
+                                width: $xlarge;
+                                height: $xlarge;
+                                margin-top: 0rem;
+                            }
+    
+                            .item8 {
+                                background-image: url(../artistas/imagenes/arcade-fire-2021.webp);
+                                width: $small;
+                                height: $small;
+                                margin-top: 8rem;
+                            }
+    
+                            .item9 {
+                                background-image: url(../artistas/imagenes/Block-Party-band.png);
+                                height: $xxlarge;
+                                width: $xxlarge;
+                                margin-top: -5rem;
+                                margin-left: -3rem;
+                            }
+                            .item10 {
+                                background-image: url(../artistas/imagenes/arctic-monkeys.jpg);
+                                width: $large;
+                                height: $large;
+                                margin-top: 0rem;
+                            }
+    
+                            .item11 {
+                                background-image: url(../artistas/imagenes/sonic.jpg);
+                                width: $large;
+                                height: $large;
+                                margin-top: -5rem;
+                                margin-left: 15rem;
+                            }
+                        }
+                    }
+                }
+                .paused {
+                    animation-play-state: paused;
+                }
+            }
+        }
+
         #galeria{
     
             .noticias{
@@ -456,6 +831,99 @@ footer{
 
 @media (min-width: 576px) and (max-width: 767px){
     main{
+
+        #collage{
+            .gallery{     
+                .wrapper{
+                    animation: galleryInMotion 10s infinite;
+                    .gallery__wrapper{
+                        
+                        .gallery-cluster{
+                            .item1 {
+                                background-image: url(../artistas/imagenes/thekillers2019.jpg);
+                                height: $medium;
+                                width: $medium;
+                                margin-top: 10rem;
+                            }
+        
+                            .item2 {
+                                background-image: url(../artistas/imagenes/radiohead.webp);
+                                height: $small;
+                                width: $small;
+                                margin-bottom: 0rem;
+                                margin-top: 5rem;
+                            }
+        
+                            .item3 {
+                                background-image: url(../artistas/imagenes/phoenix.webp);
+                                height: $large;
+                                width: $large;
+                                margin-top: 10rem;
+                                margin-left: -2rem;
+                            }
+        
+                            .item4 {
+                                background-image: url(../artistas/imagenes/keane.webp);
+                                height: $xxlarge;
+                                width: $xxlarge;
+                                margin-top: 10rem;;
+                            }
+        
+                            .item5 {
+                                background-image: url(../artistas/imagenes/interpol.jpg);
+                                width: $large;
+                                height: $large;
+                                margin-top: 5rem;
+                            }
+        
+                            .item6 {
+                                background-image: url(../artistas/imagenes/franz-ferdinand-billy-goodbye.jpeg);
+                                width: $medium;
+                                height: $medium;
+                                margin-top: 3rem;
+                            }
+                                
+                            .item7 {
+                                background-image: url(../artistas/imagenes/coldplay.jpeg);
+                                width: $xlarge;
+                                height: $xlarge;
+                                margin-top: 7rem;
+                            }
+        
+                            .item8 {
+                                background-image: url(../artistas/imagenes/arcade-fire-2021.webp);
+                                width: $small;
+                                height: $small;
+                                margin-top: 5rem;
+                            }
+        
+                            .item9 {
+                                background-image: url(../artistas/imagenes/Block-Party-band.png);
+                                height: $xxlarge;
+                                width: $xxlarge;
+                                margin-top: 0rem;
+                            }
+                            .item10 {
+                                background-image: url(../artistas/imagenes/arctic-monkeys.jpg);
+                                width: $large;
+                                height: $large;
+                                margin-top: 5rem;
+                            }
+        
+                            .item11 {
+                                background-image: url(../artistas/imagenes/sonic.jpg);
+                                width: $large;
+                                height: $large;
+                                margin-top: 0rem;
+                            }
+                        }
+                    }
+                }
+                .paused {
+                    animation-play-state: paused;
+                }
+            }
+        }
 
         #galeria{
     
@@ -499,6 +967,99 @@ footer{
 @media (min-width: 430px) and (max-width: 575px){
 
     main{
+
+        #collage{
+            .gallery{     
+                .wrapper{
+                    animation: galleryInMotion 10s infinite;
+                    .gallery__wrapper{
+                        
+                        .gallery-cluster{
+                            .item1 {
+                                background-image: url(../artistas/imagenes/thekillers2019.jpg);
+                                height: $medium;
+                                width: $medium;
+                                margin-top: 10rem;
+                            }
+        
+                            .item2 {
+                                background-image: url(../artistas/imagenes/radiohead.webp);
+                                height: $small;
+                                width: $small;
+                                margin-bottom: 0rem;
+                                margin-top: 3rem;
+                            }
+        
+                            .item3 {
+                                background-image: url(../artistas/imagenes/phoenix.webp);
+                                height: $large;
+                                width: $large;
+                                margin-top: 10rem;
+                            }
+        
+                            .item4 {
+                                background-image: url(../artistas/imagenes/keane.webp);
+                                height: $xxlarge;
+                                width: $xxlarge;
+                            }
+        
+                            .item5 {
+                                background-image: url(../artistas/imagenes/interpol.jpg);
+                                width: $large;
+                                height: $large;
+                                margin-top: 5rem;
+                            }
+        
+                            .item6 {
+                                background-image: url(../artistas/imagenes/franz-ferdinand-billy-goodbye.jpeg);
+                                width: $medium;
+                                height: $medium;
+                                margin-top: 3rem;
+                            }
+                                
+                            .item7 {
+                                background-image: url(../artistas/imagenes/coldplay.jpeg);
+                                width: $xlarge;
+                                height: $xlarge;
+                                margin-top: 0rem;
+                            }
+        
+                            .item8 {
+                                background-image: url(../artistas/imagenes/arcade-fire-2021.webp);
+                                width: $small;
+                                height: $small;
+                                margin-top: 8rem;
+                                margin-left: 1rem;
+                            }
+        
+                            .item9 {
+                                background-image: url(../artistas/imagenes/Block-Party-band.png);
+                                height: $xxlarge;
+                                width: $xxlarge;
+                                margin-top: 0rem;
+                            }
+                            .item10 {
+                                background-image: url(../artistas/imagenes/arctic-monkeys.jpg);
+                                width: $large;
+                                height: $large;
+                                margin-top: -0rem;
+                            }
+        
+                            .item11 {
+                                background-image: url(../artistas/imagenes/sonic.jpg);
+                                width: $large;
+                                height: $large;
+                                margin-top: 0rem;
+                                margin-left: 5rem;
+                            }
+                        }
+                    }
+                }
+                .paused {
+                    animation-play-state: paused;
+                }
+            }
+        }
 
         #galeria{
     
@@ -548,6 +1109,101 @@ footer{
 @media (max-width: 429px){
 
     main{
+
+        #collage{
+            .gallery{     
+                .wrapper{
+                    animation: galleryInMotion 10s infinite;
+                    .gallery__wrapper{
+                        
+                        .gallery-cluster{
+                            .item1 {
+                                background-image: url(../artistas/imagenes/thekillers2019.jpg);
+                                height: $medium;
+                                width: $medium;
+                                margin-top: 10rem;
+                            }
+        
+                            .item2 {
+                                background-image: url(../artistas/imagenes/radiohead.webp);
+                                height: $small;
+                                width: $small;
+                                margin-bottom: 0rem;
+                                margin-top: 3rem;
+                            }
+        
+                            .item3 {
+                                background-image: url(../artistas/imagenes/phoenix.webp);
+                                height: $large;
+                                width: $large;
+                                margin-top: 10rem;
+                            }
+        
+                            .item4 {
+                                background-image: url(../artistas/imagenes/keane.webp);
+                                height: $xxlarge;
+                                width: $xxlarge;
+                            }
+        
+                            .item5 {
+                                background-image: url(../artistas/imagenes/interpol.jpg);
+                                width: $large;
+                                height: $large;
+                                margin-top: 5rem;
+                            }
+        
+                            .item6 {
+                                background-image: url(../artistas/imagenes/franz-ferdinand-billy-goodbye.jpeg);
+                                width: $medium;
+                                height: $medium;
+                                margin-top: 0rem;
+                            }
+                                
+                            .item7 {
+                                background-image: url(../artistas/imagenes/coldplay.jpeg);
+                                width: $xlarge;
+                                height: $xlarge;
+                                margin-top: 0rem;
+                                margin-left: 5rem;
+                            }
+        
+                            .item8 {
+                                background-image: url(../artistas/imagenes/arcade-fire-2021.webp);
+                                width: $small;
+                                height: $small;
+                                margin-top: 0rem;
+                                margin-left: 1rem;
+                            }
+        
+                            .item9 {
+                                background-image: url(../artistas/imagenes/Block-Party-band.png);
+                                height: $xxlarge;
+                                width: $xxlarge;
+                                margin-top: 0rem;
+                            }
+                            .item10 {
+                                background-image: url(../artistas/imagenes/arctic-monkeys.jpg);
+                                width: $large;
+                                height: $large;
+                                margin-top: -5rem;
+                                margin-left: 0rem;
+                            }
+        
+                            .item11 {
+                                background-image: url(../artistas/imagenes/sonic.jpg);
+                                width: $large;
+                                height: $large;
+                                margin-top: -2rem;
+                                margin-left: 10rem;
+                            }
+                        }
+                    }
+                }
+                .paused {
+                    animation-play-state: paused;
+                }
+            }
+        }
 
         #galeria{
     
@@ -610,6 +1266,11 @@ footer{
     50% {
         transform: translateX(calc(100vw - 110px));
     }
+    75% {
+        opacity: 1;
+        transform: translateX(-25vh);
+    }
+
     100% {
         opacity: 1;
         transform: translateX(0vh);
