@@ -304,7 +304,7 @@ main #siguenos .row .formato-escribenos form button {
   }
 }
 main #siguenos .row .formato-escribenos form button:hover {
-  box-shadow: 5px 5px 5px 1px rgba(228, 42, 42, 0.616);
+  box-shadow: 0px 0px 20px 1px rgba(188, 228, 42, 0.616);
 }
 
 footer {
