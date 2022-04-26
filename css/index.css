@@ -19,32 +19,14 @@ main {
   background: linear-gradient(90deg, rgb(49, 40, 82), rgb(172, 18, 18));
 }
 main #informacion-portada {
-  background-color: rgba(0, 0, 0, 0.2117647059);
   /* cambio de colores */
   -webkit-animation: color1 15s infinite;
   animation: color1 15s infinite;
   /* aqui termina */
 }
-@keyframes color1 {
-  15% {
-    color: #cfd200;
-  }
-  30% {
-    color: #fff;
-  }
-  45% {
-    color: #cfd200;
-  }
-  60% {
-    color: #fff;
-  }
-  75% {
-    color: #cfd200;
-  }
-}
 main #informacion-portada .portada {
-  text-align: center;
-  padding: 30px;
+  text-align: justify;
+  padding: 40px 20px 60px 20px;
 }
 main #collage .gallery {
   padding: 0.5rem 0;
@@ -55,7 +37,7 @@ main #collage .gallery {
 }
 main #collage .gallery .wrapper {
   animation-name: galleryInMotion;
-  animation-duration: 30s;
+  animation-duration: 5s;
   animation-iteration-count: infinite;
   animation-timing-function: linear;
 }
@@ -66,8 +48,10 @@ main #collage .gallery .wrapper .gallery__wrapper {
 main #collage .gallery .wrapper .gallery__wrapper .gallery-cluster {
   display: flex;
   align-items: flex-start;
+  justify-content: center;
   flex-wrap: wrap;
   max-width: 100%;
+  height: auto;
 }
 main #collage .gallery .wrapper .gallery__wrapper .gallery-cluster .bubble-item {
   background-size: cover;
@@ -120,69 +104,73 @@ main #collage .gallery .wrapper .gallery__wrapper .gallery-cluster .bubble-item:
 }
 main #collage .gallery .wrapper .gallery__wrapper .gallery-cluster .item1 {
   background-image: url(../artistas/imagenes/thekillers2019.jpg);
-  height: 5rem;
-  width: 5rem;
-  margin-top: 10rem;
+  height: 7rem;
+  width: 7rem;
 }
 main #collage .gallery .wrapper .gallery__wrapper .gallery-cluster .item2 {
   background-image: url(../artistas/imagenes/radiohead.webp);
-  height: 4rem;
-  width: 4rem;
-  margin-bottom: 0rem;
-  margin-top: 5rem;
+  height: 6rem;
+  width: 6rem;
 }
 main #collage .gallery .wrapper .gallery__wrapper .gallery-cluster .item3 {
   background-image: url(../artistas/imagenes/phoenix.webp);
-  height: 6rem;
-  width: 6rem;
-  margin-top: 10rem;
+  height: 7rem;
+  width: 7rem;
 }
 main #collage .gallery .wrapper .gallery__wrapper .gallery-cluster .item4 {
-  background-image: url(../artistas/imagenes/keane.webp);
+  background-image: url(../artistas/imagenes/interpol.jpg);
   height: 8rem;
   width: 8rem;
 }
 main #collage .gallery .wrapper .gallery__wrapper .gallery-cluster .item5 {
-  background-image: url(../artistas/imagenes/interpol.jpg);
-  width: 6rem;
-  height: 6rem;
-  margin-top: 5rem;
+  background-image: url(../artistas/imagenes/keane.webp);
+  width: 7rem;
+  height: 7rem;
 }
 main #collage .gallery .wrapper .gallery__wrapper .gallery-cluster .item6 {
   background-image: url(../artistas/imagenes/franz-ferdinand-billy-goodbye.jpeg);
-  width: 5rem;
-  height: 5rem;
-  margin-top: 3rem;
+  width: 6rem;
+  height: 6rem;
 }
 main #collage .gallery .wrapper .gallery__wrapper .gallery-cluster .item7 {
   background-image: url(../artistas/imagenes/coldplay.jpeg);
   width: 7rem;
   height: 7rem;
-  margin-top: 7rem;
 }
 main #collage .gallery .wrapper .gallery__wrapper .gallery-cluster .item8 {
   background-image: url(../artistas/imagenes/arcade-fire-2021.webp);
-  width: 4rem;
-  height: 4rem;
-  margin-top: 5rem;
+  width: 7rem;
+  height: 7rem;
 }
 main #collage .gallery .wrapper .gallery__wrapper .gallery-cluster .item9 {
   background-image: url(../artistas/imagenes/Block-Party-band.png);
-  height: 8rem;
-  width: 8rem;
-  margin-top: 10rem;
+  height: 6rem;
+  width: 6rem;
 }
 main #collage .gallery .wrapper .gallery__wrapper .gallery-cluster .item10 {
   background-image: url(../artistas/imagenes/arctic-monkeys.jpg);
-  width: 6rem;
-  height: 6rem;
-  margin-top: 5rem;
+  width: 7rem;
+  height: 7rem;
 }
 main #collage .gallery .wrapper .gallery__wrapper .gallery-cluster .item11 {
-  background-image: url(../artistas/imagenes/sonic.jpg);
+  background-image: url(../artistas/imagenes/Red-Hot-Chili-Peppers.jpg);
+  width: 8rem;
+  height: 8rem;
+}
+main #collage .gallery .wrapper .gallery__wrapper .gallery-cluster .item12 {
+  background-image: url(../artistas/imagenes/keane.webp);
+  width: 7rem;
+  height: 7rem;
+}
+main #collage .gallery .wrapper .gallery__wrapper .gallery-cluster .item13 {
+  background-image: url(../artistas/imagenes/SnowPatrol_FbsfXrI.jpg);
   width: 6rem;
   height: 6rem;
-  margin-top: 10rem;
+}
+main #collage .gallery .wrapper .gallery__wrapper .gallery-cluster .item14 {
+  background-image: url(../artistas/imagenes/The-Kooks.jpg);
+  width: 7rem;
+  height: 7rem;
 }
 main #collage .gallery .paused {
   animation-play-state: paused;
@@ -327,74 +315,77 @@ footer {
 /* No aplica */
 @media screen and (max-width: 1400px) {
   main #collage .gallery .wrapper {
-    animation: galleryInMotion 30s infinite;
+    animation: galleryInMotion 5s infinite;
   }
   main #collage .gallery .wrapper .gallery__wrapper .gallery-cluster .item1 {
     background-image: url(../artistas/imagenes/thekillers2019.jpg);
-    height: 5rem;
-    width: 5rem;
-    margin-top: 10rem;
+    height: 7rem;
+    width: 7rem;
   }
   main #collage .gallery .wrapper .gallery__wrapper .gallery-cluster .item2 {
     background-image: url(../artistas/imagenes/radiohead.webp);
-    height: 4rem;
-    width: 4rem;
-    margin-bottom: 0rem;
-    margin-top: 5rem;
+    height: 6rem;
+    width: 6rem;
   }
   main #collage .gallery .wrapper .gallery__wrapper .gallery-cluster .item3 {
     background-image: url(../artistas/imagenes/phoenix.webp);
-    height: 6rem;
-    width: 6rem;
-    margin-top: 10rem;
+    height: 7rem;
+    width: 7rem;
   }
   main #collage .gallery .wrapper .gallery__wrapper .gallery-cluster .item4 {
-    background-image: url(../artistas/imagenes/keane.webp);
+    background-image: url(../artistas/imagenes/interpol.jpg);
     height: 8rem;
     width: 8rem;
   }
   main #collage .gallery .wrapper .gallery__wrapper .gallery-cluster .item5 {
-    background-image: url(../artistas/imagenes/interpol.jpg);
-    width: 6rem;
-    height: 6rem;
-    margin-top: 5rem;
+    background-image: url(../artistas/imagenes/keane.webp);
+    width: 7rem;
+    height: 7rem;
   }
   main #collage .gallery .wrapper .gallery__wrapper .gallery-cluster .item6 {
     background-image: url(../artistas/imagenes/franz-ferdinand-billy-goodbye.jpeg);
-    width: 5rem;
-    height: 5rem;
-    margin-top: 3rem;
+    width: 6rem;
+    height: 6rem;
   }
   main #collage .gallery .wrapper .gallery__wrapper .gallery-cluster .item7 {
     background-image: url(../artistas/imagenes/coldplay.jpeg);
     width: 7rem;
     height: 7rem;
-    margin-top: 7rem;
   }
   main #collage .gallery .wrapper .gallery__wrapper .gallery-cluster .item8 {
     background-image: url(../artistas/imagenes/arcade-fire-2021.webp);
-    width: 4rem;
-    height: 4rem;
-    margin-top: 5rem;
+    width: 7rem;
+    height: 7rem;
   }
   main #collage .gallery .wrapper .gallery__wrapper .gallery-cluster .item9 {
     background-image: url(../artistas/imagenes/Block-Party-band.png);
-    height: 8rem;
-    width: 8rem;
-    margin-top: 10rem;
+    height: 6rem;
+    width: 6rem;
   }
   main #collage .gallery .wrapper .gallery__wrapper .gallery-cluster .item10 {
     background-image: url(../artistas/imagenes/arctic-monkeys.jpg);
-    width: 6rem;
-    height: 6rem;
-    margin-top: 5rem;
+    width: 7rem;
+    height: 7rem;
   }
   main #collage .gallery .wrapper .gallery__wrapper .gallery-cluster .item11 {
-    background-image: url(../artistas/imagenes/sonic.jpg);
+    background-image: url(../artistas/imagenes/Red-Hot-Chili-Peppers.jpg);
+    width: 8rem;
+    height: 8rem;
+  }
+  main #collage .gallery .wrapper .gallery__wrapper .gallery-cluster .item12 {
+    background-image: url(../artistas/imagenes/keane.webp);
+    width: 7rem;
+    height: 7rem;
+  }
+  main #collage .gallery .wrapper .gallery__wrapper .gallery-cluster .item13 {
+    background-image: url(../artistas/imagenes/SnowPatrol_FbsfXrI.jpg);
     width: 6rem;
     height: 6rem;
-    margin-top: 11rem;
-    margin-left: -3rem;
+  }
+  main #collage .gallery .wrapper .gallery__wrapper .gallery-cluster .item14 {
+    background-image: url(../artistas/imagenes/The-Kooks.jpg);
+    width: 7rem;
+    height: 7rem;
   }
   main #collage .gallery .paused {
     animation-play-state: paused;
@@ -409,75 +400,77 @@ footer {
 /* No aplica */
 @media (min-width: 1200px) and (max-width: 1399px) {
   main #collage .gallery .wrapper {
-    animation: galleryInMotion 30s infinite;
+    animation: galleryInMotion 5s infinite;
   }
   main #collage .gallery .wrapper .gallery__wrapper .gallery-cluster .item1 {
     background-image: url(../artistas/imagenes/thekillers2019.jpg);
-    height: 5rem;
-    width: 5rem;
-    margin-top: 10rem;
+    height: 6rem;
+    width: 6rem;
   }
   main #collage .gallery .wrapper .gallery__wrapper .gallery-cluster .item2 {
     background-image: url(../artistas/imagenes/radiohead.webp);
-    height: 4rem;
-    width: 4rem;
-    margin-bottom: 0rem;
-    margin-top: 5rem;
+    height: 5rem;
+    width: 5rem;
   }
   main #collage .gallery .wrapper .gallery__wrapper .gallery-cluster .item3 {
     background-image: url(../artistas/imagenes/phoenix.webp);
     height: 6rem;
     width: 6rem;
-    margin-top: 10rem;
   }
   main #collage .gallery .wrapper .gallery__wrapper .gallery-cluster .item4 {
-    background-image: url(../artistas/imagenes/keane.webp);
-    height: 8rem;
-    width: 8rem;
+    background-image: url(../artistas/imagenes/interpol.jpg);
+    height: 7rem;
+    width: 7rem;
   }
   main #collage .gallery .wrapper .gallery__wrapper .gallery-cluster .item5 {
-    background-image: url(../artistas/imagenes/interpol.jpg);
+    background-image: url(../artistas/imagenes/keane.webp);
     width: 6rem;
     height: 6rem;
-    margin-top: 5rem;
   }
   main #collage .gallery .wrapper .gallery__wrapper .gallery-cluster .item6 {
     background-image: url(../artistas/imagenes/franz-ferdinand-billy-goodbye.jpeg);
     width: 5rem;
     height: 5rem;
-    margin-top: 3rem;
   }
   main #collage .gallery .wrapper .gallery__wrapper .gallery-cluster .item7 {
     background-image: url(../artistas/imagenes/coldplay.jpeg);
-    width: 7rem;
-    height: 7rem;
-    margin-top: 7rem;
+    width: 6rem;
+    height: 6rem;
   }
   main #collage .gallery .wrapper .gallery__wrapper .gallery-cluster .item8 {
     background-image: url(../artistas/imagenes/arcade-fire-2021.webp);
-    width: 4rem;
-    height: 4rem;
-    margin-top: 5rem;
+    width: 6rem;
+    height: 6rem;
   }
   main #collage .gallery .wrapper .gallery__wrapper .gallery-cluster .item9 {
     background-image: url(../artistas/imagenes/Block-Party-band.png);
-    height: 8rem;
-    width: 8rem;
-    margin-top: 10rem;
+    height: 5rem;
+    width: 5rem;
   }
   main #collage .gallery .wrapper .gallery__wrapper .gallery-cluster .item10 {
     background-image: url(../artistas/imagenes/arctic-monkeys.jpg);
     width: 6rem;
     height: 6rem;
-    margin-top: 3rem;
-    margin-left: -5rem;
   }
   main #collage .gallery .wrapper .gallery__wrapper .gallery-cluster .item11 {
-    background-image: url(../artistas/imagenes/sonic.jpg);
+    background-image: url(../artistas/imagenes/Red-Hot-Chili-Peppers.jpg);
+    width: 7rem;
+    height: 7rem;
+  }
+  main #collage .gallery .wrapper .gallery__wrapper .gallery-cluster .item12 {
+    background-image: url(../artistas/imagenes/keane.webp);
     width: 6rem;
     height: 6rem;
-    margin-top: -8rem;
-    margin-left: 38rem;
+  }
+  main #collage .gallery .wrapper .gallery__wrapper .gallery-cluster .item13 {
+    background-image: url(../artistas/imagenes/SnowPatrol_FbsfXrI.jpg);
+    width: 5rem;
+    height: 5rem;
+  }
+  main #collage .gallery .wrapper .gallery__wrapper .gallery-cluster .item14 {
+    background-image: url(../artistas/imagenes/The-Kooks.jpg);
+    width: 6rem;
+    height: 6rem;
   }
   main #collage .gallery .paused {
     animation-play-state: paused;
@@ -495,76 +488,77 @@ footer {
 }
 @media (min-width: 992px) and (max-width: 1199px) {
   main #collage .gallery .wrapper {
-    animation: galleryInMotion 30s infinite;
+    animation: galleryInMotion 5s infinite;
   }
   main #collage .gallery .wrapper .gallery__wrapper .gallery-cluster .item1 {
     background-image: url(../artistas/imagenes/thekillers2019.jpg);
-    height: 5rem;
-    width: 5rem;
-    margin-top: 10rem;
+    height: 7rem;
+    width: 7rem;
   }
   main #collage .gallery .wrapper .gallery__wrapper .gallery-cluster .item2 {
     background-image: url(../artistas/imagenes/radiohead.webp);
-    height: 4rem;
-    width: 4rem;
-    margin-bottom: 0rem;
-    margin-top: 5rem;
+    height: 6rem;
+    width: 6rem;
   }
   main #collage .gallery .wrapper .gallery__wrapper .gallery-cluster .item3 {
     background-image: url(../artistas/imagenes/phoenix.webp);
-    height: 6rem;
-    width: 6rem;
-    margin-top: 10rem;
-  }
-  main #collage .gallery .wrapper .gallery__wrapper .gallery-cluster .item4 {
-    background-image: url(../artistas/imagenes/keane.webp);
     height: 8rem;
     width: 8rem;
   }
-  main #collage .gallery .wrapper .gallery__wrapper .gallery-cluster .item5 {
+  main #collage .gallery .wrapper .gallery__wrapper .gallery-cluster .item4 {
     background-image: url(../artistas/imagenes/interpol.jpg);
-    width: 6rem;
     height: 6rem;
-    margin-top: 5rem;
+    width: 6rem;
+  }
+  main #collage .gallery .wrapper .gallery__wrapper .gallery-cluster .item5 {
+    background-image: url(../artistas/imagenes/keane.webp);
+    width: 7rem;
+    height: 7rem;
   }
   main #collage .gallery .wrapper .gallery__wrapper .gallery-cluster .item6 {
     background-image: url(../artistas/imagenes/franz-ferdinand-billy-goodbye.jpeg);
-    width: 5rem;
-    height: 5rem;
-    margin-top: 3rem;
+    width: 7rem;
+    height: 7rem;
   }
   main #collage .gallery .wrapper .gallery__wrapper .gallery-cluster .item7 {
     background-image: url(../artistas/imagenes/coldplay.jpeg);
     width: 7rem;
     height: 7rem;
-    margin-top: 7rem;
   }
   main #collage .gallery .wrapper .gallery__wrapper .gallery-cluster .item8 {
     background-image: url(../artistas/imagenes/arcade-fire-2021.webp);
-    width: 4rem;
-    height: 4rem;
-    margin-top: 0rem;
+    width: 7rem;
+    height: 7rem;
   }
   main #collage .gallery .wrapper .gallery__wrapper .gallery-cluster .item9 {
     background-image: url(../artistas/imagenes/Block-Party-band.png);
-    height: 8rem;
-    width: 8rem;
-    margin-top: 0rem;
-    margin-left: 15rem;
+    height: 6rem;
+    width: 6rem;
   }
   main #collage .gallery .wrapper .gallery__wrapper .gallery-cluster .item10 {
     background-image: url(../artistas/imagenes/arctic-monkeys.jpg);
-    width: 6rem;
-    height: 6rem;
-    margin-top: -5rem;
-    margin-left: 0rem;
+    width: 8rem;
+    height: 8rem;
   }
   main #collage .gallery .wrapper .gallery__wrapper .gallery-cluster .item11 {
-    background-image: url(../artistas/imagenes/sonic.jpg);
+    background-image: url(../artistas/imagenes/Red-Hot-Chili-Peppers.jpg);
     width: 6rem;
     height: 6rem;
-    margin-top: -2rem;
-    margin-left: 0rem;
+  }
+  main #collage .gallery .wrapper .gallery__wrapper .gallery-cluster .item12 {
+    background-image: url(../artistas/imagenes/keane.webp);
+    width: 7rem;
+    height: 7rem;
+  }
+  main #collage .gallery .wrapper .gallery__wrapper .gallery-cluster .item13 {
+    background-image: url(../artistas/imagenes/SnowPatrol_FbsfXrI.jpg);
+    width: 7rem;
+    height: 7rem;
+  }
+  main #collage .gallery .wrapper .gallery__wrapper .gallery-cluster .item14 {
+    background-image: url(../artistas/imagenes/The-Kooks.jpg);
+    width: 7rem;
+    height: 7rem;
   }
   main #collage .gallery .paused {
     animation-play-state: paused;
@@ -585,77 +579,77 @@ footer {
 }
 @media (min-width: 768px) and (max-width: 991px) {
   main #collage .gallery .wrapper {
-    animation: galleryInMotion 15s infinite;
+    animation: galleryInMotion 5s infinite;
   }
   main #collage .gallery .wrapper .gallery__wrapper .gallery-cluster .item1 {
     background-image: url(../artistas/imagenes/thekillers2019.jpg);
-    height: 5rem;
-    width: 5rem;
-    margin-top: 10rem;
+    height: 7rem;
+    width: 7rem;
   }
   main #collage .gallery .wrapper .gallery__wrapper .gallery-cluster .item2 {
     background-image: url(../artistas/imagenes/radiohead.webp);
-    height: 4rem;
-    width: 4rem;
-    margin-bottom: 0rem;
-    margin-top: 5rem;
+    height: 8rem;
+    width: 8rem;
   }
   main #collage .gallery .wrapper .gallery__wrapper .gallery-cluster .item3 {
     background-image: url(../artistas/imagenes/phoenix.webp);
-    height: 6rem;
-    width: 6rem;
-    margin-top: 10rem;
+    height: 7rem;
+    width: 7rem;
   }
   main #collage .gallery .wrapper .gallery__wrapper .gallery-cluster .item4 {
-    background-image: url(../artistas/imagenes/keane.webp);
-    height: 8rem;
-    width: 8rem;
-    margin-top: 5rem;
+    background-image: url(../artistas/imagenes/interpol.jpg);
+    height: 7rem;
+    width: 7rem;
   }
   main #collage .gallery .wrapper .gallery__wrapper .gallery-cluster .item5 {
-    background-image: url(../artistas/imagenes/interpol.jpg);
-    width: 6rem;
-    height: 6rem;
-    margin-top: 15rem;
-    margin-left: -2rem;
+    background-image: url(../artistas/imagenes/keane.webp);
+    width: 8rem;
+    height: 8rem;
   }
   main #collage .gallery .wrapper .gallery__wrapper .gallery-cluster .item6 {
     background-image: url(../artistas/imagenes/franz-ferdinand-billy-goodbye.jpeg);
-    width: 5rem;
-    height: 5rem;
-    margin-top: 8rem;
+    width: 7rem;
+    height: 7rem;
   }
   main #collage .gallery .wrapper .gallery__wrapper .gallery-cluster .item7 {
     background-image: url(../artistas/imagenes/coldplay.jpeg);
-    width: 7rem;
-    height: 7rem;
-    margin-top: 0rem;
+    width: 8rem;
+    height: 8rem;
   }
   main #collage .gallery .wrapper .gallery__wrapper .gallery-cluster .item8 {
     background-image: url(../artistas/imagenes/arcade-fire-2021.webp);
-    width: 4rem;
-    height: 4rem;
-    margin-top: 8rem;
+    width: 7rem;
+    height: 7rem;
   }
   main #collage .gallery .wrapper .gallery__wrapper .gallery-cluster .item9 {
     background-image: url(../artistas/imagenes/Block-Party-band.png);
     height: 8rem;
     width: 8rem;
-    margin-top: -5rem;
-    margin-left: -3rem;
   }
   main #collage .gallery .wrapper .gallery__wrapper .gallery-cluster .item10 {
     background-image: url(../artistas/imagenes/arctic-monkeys.jpg);
-    width: 6rem;
-    height: 6rem;
-    margin-top: 0rem;
+    width: 7rem;
+    height: 7rem;
   }
   main #collage .gallery .wrapper .gallery__wrapper .gallery-cluster .item11 {
-    background-image: url(../artistas/imagenes/sonic.jpg);
-    width: 6rem;
-    height: 6rem;
-    margin-top: -5rem;
-    margin-left: 15rem;
+    background-image: url(../artistas/imagenes/Red-Hot-Chili-Peppers.jpg);
+    width: 7rem;
+    height: 7rem;
+  }
+  main #collage .gallery .wrapper .gallery__wrapper .gallery-cluster .item12 {
+    background-image: url(../artistas/imagenes/keane.webp);
+    width: 8rem;
+    height: 8rem;
+  }
+  main #collage .gallery .wrapper .gallery__wrapper .gallery-cluster .item13 {
+    background-image: url(../artistas/imagenes/SnowPatrol_FbsfXrI.jpg);
+    width: 7rem;
+    height: 7rem;
+  }
+  main #collage .gallery .wrapper .gallery__wrapper .gallery-cluster .item14 {
+    background-image: url(../artistas/imagenes/The-Kooks.jpg);
+    width: 8rem;
+    height: 8rem;
   }
   main #collage .gallery .paused {
     animation-play-state: paused;
@@ -676,75 +670,77 @@ footer {
 }
 @media (min-width: 576px) and (max-width: 767px) {
   main #collage .gallery .wrapper {
-    animation: galleryInMotion 20s infinite;
+    animation: galleryInMotion 5s infinite;
   }
   main #collage .gallery .wrapper .gallery__wrapper .gallery-cluster .item1 {
     background-image: url(../artistas/imagenes/thekillers2019.jpg);
-    height: 5rem;
-    width: 5rem;
-    margin-top: 10rem;
+    height: 8rem;
+    width: 8rem;
   }
   main #collage .gallery .wrapper .gallery__wrapper .gallery-cluster .item2 {
     background-image: url(../artistas/imagenes/radiohead.webp);
-    height: 4rem;
-    width: 4rem;
-    margin-bottom: 0rem;
-    margin-top: 5rem;
+    height: 8rem;
+    width: 8rem;
   }
   main #collage .gallery .wrapper .gallery__wrapper .gallery-cluster .item3 {
     background-image: url(../artistas/imagenes/phoenix.webp);
-    height: 6rem;
-    width: 6rem;
-    margin-top: 10rem;
-    margin-left: -2rem;
-  }
-  main #collage .gallery .wrapper .gallery__wrapper .gallery-cluster .item4 {
-    background-image: url(../artistas/imagenes/keane.webp);
     height: 8rem;
     width: 8rem;
-    margin-top: 10rem;
+  }
+  main #collage .gallery .wrapper .gallery__wrapper .gallery-cluster .item4 {
+    background-image: url(../artistas/imagenes/interpol.jpg);
+    height: 8rem;
+    width: 8rem;
   }
   main #collage .gallery .wrapper .gallery__wrapper .gallery-cluster .item5 {
-    background-image: url(../artistas/imagenes/interpol.jpg);
-    width: 6rem;
-    height: 6rem;
-    margin-top: 5rem;
+    background-image: url(../artistas/imagenes/keane.webp);
+    width: 8rem;
+    height: 8rem;
   }
   main #collage .gallery .wrapper .gallery__wrapper .gallery-cluster .item6 {
     background-image: url(../artistas/imagenes/franz-ferdinand-billy-goodbye.jpeg);
-    width: 5rem;
-    height: 5rem;
-    margin-top: 3rem;
+    width: 8rem;
+    height: 8rem;
   }
   main #collage .gallery .wrapper .gallery__wrapper .gallery-cluster .item7 {
     background-image: url(../artistas/imagenes/coldplay.jpeg);
-    width: 7rem;
-    height: 7rem;
-    margin-top: 7rem;
+    width: 8rem;
+    height: 8rem;
   }
   main #collage .gallery .wrapper .gallery__wrapper .gallery-cluster .item8 {
     background-image: url(../artistas/imagenes/arcade-fire-2021.webp);
-    width: 4rem;
-    height: 4rem;
-    margin-top: 5rem;
+    width: 8rem;
+    height: 8rem;
   }
   main #collage .gallery .wrapper .gallery__wrapper .gallery-cluster .item9 {
     background-image: url(../artistas/imagenes/Block-Party-band.png);
     height: 8rem;
     width: 8rem;
-    margin-top: 0rem;
   }
   main #collage .gallery .wrapper .gallery__wrapper .gallery-cluster .item10 {
     background-image: url(../artistas/imagenes/arctic-monkeys.jpg);
-    width: 6rem;
-    height: 6rem;
-    margin-top: 5rem;
+    width: 8rem;
+    height: 8rem;
   }
   main #collage .gallery .wrapper .gallery__wrapper .gallery-cluster .item11 {
-    background-image: url(../artistas/imagenes/sonic.jpg);
-    width: 6rem;
-    height: 6rem;
-    margin-top: 0rem;
+    background-image: url(../artistas/imagenes/Red-Hot-Chili-Peppers.jpg);
+    width: 8rem;
+    height: 8rem;
+  }
+  main #collage .gallery .wrapper .gallery__wrapper .gallery-cluster .item12 {
+    background-image: url(../artistas/imagenes/keane.webp);
+    width: 8rem;
+    height: 8rem;
+  }
+  main #collage .gallery .wrapper .gallery__wrapper .gallery-cluster .item13 {
+    background-image: url(../artistas/imagenes/SnowPatrol_FbsfXrI.jpg);
+    width: 8rem;
+    height: 8rem;
+  }
+  main #collage .gallery .wrapper .gallery__wrapper .gallery-cluster .item14 {
+    background-image: url(../artistas/imagenes/The-Kooks.jpg);
+    width: 8rem;
+    height: 8rem;
   }
   main #collage .gallery .paused {
     animation-play-state: paused;
@@ -765,75 +761,77 @@ footer {
 }
 @media (min-width: 430px) and (max-width: 575px) {
   main #collage .gallery .wrapper {
-    animation: galleryInMotion 30s infinite;
+    animation: galleryInMotion 5s infinite;
   }
   main #collage .gallery .wrapper .gallery__wrapper .gallery-cluster .item1 {
     background-image: url(../artistas/imagenes/thekillers2019.jpg);
-    height: 5rem;
-    width: 5rem;
-    margin-top: 10rem;
+    height: 8rem;
+    width: 8rem;
   }
   main #collage .gallery .wrapper .gallery__wrapper .gallery-cluster .item2 {
     background-image: url(../artistas/imagenes/radiohead.webp);
-    height: 4rem;
-    width: 4rem;
-    margin-bottom: 0rem;
-    margin-top: 3rem;
+    height: 8rem;
+    width: 8rem;
   }
   main #collage .gallery .wrapper .gallery__wrapper .gallery-cluster .item3 {
     background-image: url(../artistas/imagenes/phoenix.webp);
-    height: 6rem;
-    width: 6rem;
-    margin-top: 10rem;
+    height: 8rem;
+    width: 8rem;
   }
   main #collage .gallery .wrapper .gallery__wrapper .gallery-cluster .item4 {
-    background-image: url(../artistas/imagenes/keane.webp);
+    background-image: url(../artistas/imagenes/interpol.jpg);
     height: 8rem;
     width: 8rem;
   }
   main #collage .gallery .wrapper .gallery__wrapper .gallery-cluster .item5 {
-    background-image: url(../artistas/imagenes/interpol.jpg);
-    width: 6rem;
-    height: 6rem;
-    margin-top: 5rem;
+    background-image: url(../artistas/imagenes/keane.webp);
+    width: 8rem;
+    height: 8rem;
   }
   main #collage .gallery .wrapper .gallery__wrapper .gallery-cluster .item6 {
     background-image: url(../artistas/imagenes/franz-ferdinand-billy-goodbye.jpeg);
-    width: 5rem;
-    height: 5rem;
-    margin-top: 3rem;
+    width: 8rem;
+    height: 8rem;
   }
   main #collage .gallery .wrapper .gallery__wrapper .gallery-cluster .item7 {
     background-image: url(../artistas/imagenes/coldplay.jpeg);
-    width: 7rem;
-    height: 7rem;
-    margin-top: 0rem;
+    width: 8rem;
+    height: 8rem;
   }
   main #collage .gallery .wrapper .gallery__wrapper .gallery-cluster .item8 {
     background-image: url(../artistas/imagenes/arcade-fire-2021.webp);
-    width: 4rem;
-    height: 4rem;
-    margin-top: 8rem;
-    margin-left: 1rem;
+    width: 8rem;
+    height: 8rem;
   }
   main #collage .gallery .wrapper .gallery__wrapper .gallery-cluster .item9 {
     background-image: url(../artistas/imagenes/Block-Party-band.png);
     height: 8rem;
     width: 8rem;
-    margin-top: 0rem;
   }
   main #collage .gallery .wrapper .gallery__wrapper .gallery-cluster .item10 {
     background-image: url(../artistas/imagenes/arctic-monkeys.jpg);
-    width: 6rem;
-    height: 6rem;
-    margin-top: 0rem;
+    width: 8rem;
+    height: 8rem;
   }
   main #collage .gallery .wrapper .gallery__wrapper .gallery-cluster .item11 {
-    background-image: url(../artistas/imagenes/sonic.jpg);
-    width: 6rem;
-    height: 6rem;
-    margin-top: 0rem;
-    margin-left: 5rem;
+    background-image: url(../artistas/imagenes/Red-Hot-Chili-Peppers.jpg);
+    width: 8rem;
+    height: 8rem;
+  }
+  main #collage .gallery .wrapper .gallery__wrapper .gallery-cluster .item12 {
+    background-image: url(../artistas/imagenes/keane.webp);
+    width: 8rem;
+    height: 8rem;
+  }
+  main #collage .gallery .wrapper .gallery__wrapper .gallery-cluster .item13 {
+    background-image: url(../artistas/imagenes/SnowPatrol_FbsfXrI.jpg);
+    width: 8rem;
+    height: 8rem;
+  }
+  main #collage .gallery .wrapper .gallery__wrapper .gallery-cluster .item14 {
+    background-image: url(../artistas/imagenes/The-Kooks.jpg);
+    width: 8rem;
+    height: 8rem;
   }
   main #collage .gallery .paused {
     animation-play-state: paused;
@@ -860,77 +858,77 @@ footer {
 }
 @media (max-width: 429px) {
   main #collage .gallery .wrapper {
-    animation: galleryInMotion 20s infinite;
+    animation: galleryInMotion 5s infinite;
   }
   main #collage .gallery .wrapper .gallery__wrapper .gallery-cluster .item1 {
     background-image: url(../artistas/imagenes/thekillers2019.jpg);
-    height: 5rem;
-    width: 5rem;
-    margin-top: 10rem;
+    height: 8rem;
+    width: 8rem;
   }
   main #collage .gallery .wrapper .gallery__wrapper .gallery-cluster .item2 {
     background-image: url(../artistas/imagenes/radiohead.webp);
-    height: 4rem;
-    width: 4rem;
-    margin-bottom: 0rem;
-    margin-top: 3rem;
+    height: 8rem;
+    width: 8rem;
   }
   main #collage .gallery .wrapper .gallery__wrapper .gallery-cluster .item3 {
     background-image: url(../artistas/imagenes/phoenix.webp);
-    height: 6rem;
-    width: 6rem;
-    margin-top: 10rem;
+    height: 8rem;
+    width: 8rem;
   }
   main #collage .gallery .wrapper .gallery__wrapper .gallery-cluster .item4 {
-    background-image: url(../artistas/imagenes/keane.webp);
+    background-image: url(../artistas/imagenes/interpol.jpg);
     height: 8rem;
     width: 8rem;
   }
   main #collage .gallery .wrapper .gallery__wrapper .gallery-cluster .item5 {
-    background-image: url(../artistas/imagenes/interpol.jpg);
-    width: 6rem;
-    height: 6rem;
-    margin-top: 5rem;
+    background-image: url(../artistas/imagenes/keane.webp);
+    width: 8rem;
+    height: 8rem;
   }
   main #collage .gallery .wrapper .gallery__wrapper .gallery-cluster .item6 {
     background-image: url(../artistas/imagenes/franz-ferdinand-billy-goodbye.jpeg);
-    width: 5rem;
-    height: 5rem;
-    margin-top: 0rem;
+    width: 8rem;
+    height: 8rem;
   }
   main #collage .gallery .wrapper .gallery__wrapper .gallery-cluster .item7 {
     background-image: url(../artistas/imagenes/coldplay.jpeg);
-    width: 7rem;
-    height: 7rem;
-    margin-top: 0rem;
-    margin-left: 5rem;
+    width: 8rem;
+    height: 8rem;
   }
   main #collage .gallery .wrapper .gallery__wrapper .gallery-cluster .item8 {
     background-image: url(../artistas/imagenes/arcade-fire-2021.webp);
-    width: 4rem;
-    height: 4rem;
-    margin-top: 0rem;
-    margin-left: 1rem;
+    width: 8rem;
+    height: 8rem;
   }
   main #collage .gallery .wrapper .gallery__wrapper .gallery-cluster .item9 {
     background-image: url(../artistas/imagenes/Block-Party-band.png);
     height: 8rem;
     width: 8rem;
-    margin-top: 0rem;
   }
   main #collage .gallery .wrapper .gallery__wrapper .gallery-cluster .item10 {
     background-image: url(../artistas/imagenes/arctic-monkeys.jpg);
-    width: 6rem;
-    height: 6rem;
-    margin-top: -5rem;
-    margin-left: 0rem;
+    width: 8rem;
+    height: 8rem;
   }
   main #collage .gallery .wrapper .gallery__wrapper .gallery-cluster .item11 {
-    background-image: url(../artistas/imagenes/sonic.jpg);
-    width: 6rem;
-    height: 6rem;
-    margin-top: -2rem;
-    margin-left: 10rem;
+    background-image: url(../artistas/imagenes/Red-Hot-Chili-Peppers.jpg);
+    width: 8rem;
+    height: 8rem;
+  }
+  main #collage .gallery .wrapper .gallery__wrapper .gallery-cluster .item12 {
+    background-image: url(../artistas/imagenes/keane.webp);
+    width: 8rem;
+    height: 8rem;
+  }
+  main #collage .gallery .wrapper .gallery__wrapper .gallery-cluster .item13 {
+    background-image: url(../artistas/imagenes/SnowPatrol_FbsfXrI.jpg);
+    width: 8rem;
+    height: 8rem;
+  }
+  main #collage .gallery .wrapper .gallery__wrapper .gallery-cluster .item14 {
+    background-image: url(../artistas/imagenes/The-Kooks.jpg);
+    width: 8rem;
+    height: 8rem;
   }
   main #collage .gallery .paused {
     animation-play-state: paused;
@@ -961,13 +959,16 @@ footer {
 }
 @keyframes galleryInMotion {
   0% {
-    transform: translateX(-100%);
+    -webkit-transform: translateX(-2%);
+    -moz-transform: translateX(-10%);
   }
   50% {
-    transform: translateX(100%);
+    -webkit-transform: translateX(3%);
+    -moz-transform: translateX(10%);
   }
   100% {
-    transform: translateX(-100%);
+    -webkit-transform: translateX(-2%);
+    -moz-transform: translateX(-10%);
   }
 }
 @keyframes texto-ocultar {
