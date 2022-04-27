@@ -1,5 +1,5 @@
 header {
-  background: linear-gradient(90deg, rgb(163, 44, 69), rgb(20, 16, 16));
+  background-color: #212529;
 }
 header .logo {
   display: flex;
@@ -10,13 +10,9 @@ header .logo h5 {
   color: #fff;
 }
 
-nav {
-  background: linear-gradient(90deg, rgb(163, 44, 69), rgb(20, 16, 16));
-}
-
 main {
   color: #fff;
-  background: linear-gradient(90deg, rgb(49, 40, 82), rgb(172, 18, 18));
+  background-color: #212529;
 }
 main #informacion-portada {
   /* cambio de colores */
@@ -277,7 +273,7 @@ main #album-dia .contenedor-disco .albumes .playlist iframe {
   width: 50%;
 }
 main #siguenos {
-  background: linear-gradient(90deg, rgb(189, 46, 11), rgb(121, 6, 102));
+  background-color: #212529;
 }
 main #siguenos .row .formato-escribenos form button {
   width: 100%;
@@ -308,7 +304,7 @@ main #siguenos .row .formato-escribenos form button:hover {
 }
 
 footer {
-  background: linear-gradient(90deg, rgb(163, 44, 69), rgb(20, 16, 16));
+  background-color: #212529;
 }
 
 /* ******************* Media Queries *************************************/
